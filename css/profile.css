@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  border-bottom: 1px solid black;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+nav{
+  display: flex;
+}
+.nav-item{
+  border: 1px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: whitesmoke;
+}
+.nav-item:hover{
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+header img{
+  height: 3em;
+}
+main{
+  display: flex;
+  height: 400px;
+  align-items: center;
+  padding: 25px 0;
+  background-image: url('../img/bgh.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0px 0px 2px white;
+  color: white;
+}
+
+main img{
+  height: 15em;
+  width: 15em;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 3px white;
+}
+main .content{
+  flex: 1;
+}
+footer p{
+  float: right;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 567px){
+  header{
+   text-align: center;
+    display: block;
+  }
+  nav{
+    flex-direction: column;
+  }
+  main{
+    flex-direction: column;
+    padding: 25px 10px;
+    font-size: 6pt;
+  }
+  footer p{
+    font-size: 6pt;
+  }
+  main img{
+  height: 20em;
+  width: 28em;
+  
+}
+  
+  
+}

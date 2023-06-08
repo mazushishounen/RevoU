@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  border-bottom: 1px solid black;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+nav{
+  display: flex;
+}
+.nav-item{
+  border: 1px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: whitesmoke;
+}
+.nav-item:hover{
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+.headquarters{
+  padding: 25px;
+  border-bottom: 1px solid black;
+}
+.imagehq{
+  display: flex;
+}
+header img{
+  height: 3em;
+}
+.hero{
+  padding: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  background-image: url('../img/shaft1.jpeg');
+  border-bottom: 1px solid black;
+  transition: 0.5s;
+}
+.hero h1, h3{
+  text-shadow: 0px 0px 5px white;
+}
+.shaft{
+  background-image: url('../img/shaft2.jpeg');
+  transition: 0.5s;
+}
+.imagehq div img{
+  width: 100px;
+  height: 100px;
+  border-radius: 360px;
+  margin: 25px 25px;
+  border: 1px solid black;
+}
+.imagehq div p{
+  text-align: center;
+}
+.massage-us{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 10px;
+  border-bottom: 1px solid black;
+}
+.input textarea{
+  height: 125px;
+  width: 200px;
+}
+.output{
+  padding: 10px;
+  border: 1px solid black;
+  height: 200px;
+  width: 400px;
+}
+footer p{
+  float: right;
+  padding: 25px;
+}
+.send{
+  display: inline-block;
+  width: 25em;
+  padding: 5px;
+}
+
+
+@media only screen and (max-width: 567px){
+  header{
+   text-align: center;
+    display: block;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .hero{
+    font-size: 6pt;
+    height: 200px;
+    padding: 20px;
+  }
+  .headquarters{
+    font-size: 6pt;
+  }
+  .imagehq div img{
+    height: 50px;
+    width: 50px;
+  }
+  .input input, tr{
+    font-size: 6pt;
+    width: 50px;
+  }
+  .input textarea{
+    height: 85px;
+  }
+  .output{
+    width: 100px;
+    height: 150px;
+    font-size: 6pt;
+  }
+  .send{
+    width: 18em;
+  }
+}

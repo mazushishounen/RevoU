@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <img src="img/revo.png" alt="RevoU_Logo">
+    <nav>
+      <a href="#" class="nav-item">
+        Home
+      </a>
+      <a href="profile.html" class="nav-item">
+        Our Profile
+      </a>
+      <a href="#" class="nav-item">
+        Portfolio
+      </a>
+      <a href="#" class="nav-item">
+        Massange Us
+      </a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>Hello <span class="welcome"></span>, welcome to this website !</h1>
+    <h3>Ini adalah latihan saya di RevoU</h3>
+  </div>
+  <div class="headquarters">
+    <h2>Our Headquarters</h2>
+    <div class="imagehq">
+      <div>
+        <img src="img/s1.jpg" alt="image-hq">
+        <p>
+          Tokyo
+        </p>
+      </div>
+      <div>
+        <img src="img/s2.jpg" alt="image-hq">
+        <p>
+          Tokyo
+        </p>
+      </div>
+      <div>
+        <img src="img/s3.jpg" alt="image-hq">
+        <p>
+          Tokyo
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="massage-us">
+    <div class="input">
+      <table>
+        <tr>
+          <td>Nama</td>
+          <td>:</td>
+          <td><input type="text" class="nama"></td>
+        </tr>
+        <tr>
+          <td>Tanggal lahir</td>
+          <td>:</td>
+          <td><input type="date" class="tgl"></td>
+        </tr>
+        <tr>
+          <td>Jenis kelamin</td>
+          <td>:</td>
+          <td>
+            <input name="gender" type="radio" value="Laki-Laki">Laki-Laki
+            <input name="gender" type="radio" value="Perempuan">
+            Perempuan
+          </td>
+        </tr>
+        <tr>
+          <td>Pesan</td>
+          <td>:</td>
+          <td><textarea class="inputarea"></textarea></td>
+        </tr>
+      </table>
+      <button class="send" onclick="send()">Kirim</button>
+    </div>
+    <div class="output">
+    </div>
+  </div>
+  <footer>
+    <p>
+      Created by RevoU
+    </p>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
